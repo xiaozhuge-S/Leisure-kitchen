@@ -1,0 +1,20 @@
+<!-- 闲暇时光小厨房详情页 -->
+<view class='menuDetail'>
+  <image class='title_img' src='/assets/(15).jpg'></image>
+  <view class='main'>
+    <view class='title'>牛肉炒饭</view>
+    <view class='des'>姜：降逆止呕、化痰止咳、散寒解表↵青蒜：富含胡萝卜素、活血化瘀↵料酒：活血化瘀</view>
+    <view class='ingredient'>
+      <view class='ingredient_title'>材料</view>
+      <view class='ingredient_info' wx:for="{{menuDetailsList}}">
+        <view class='left'>{{item.cai}}</view>
+        <view class='right'>{{item.gg}}</view>
+      </view>
+    </view>
+    <view class='step'>做法</view>
+    <view class='step_detail'>
+      <view class='step_des'>步骤1：如果尖椒较长，可以对半切开。如果比较小，可以在表面轻轻划一些小口，这样比较入味。</view>
+      <image src='/assets/(15).jpg'></image>
+    </view>
+  </view>
+</view>

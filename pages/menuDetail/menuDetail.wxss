@@ -1,0 +1,48 @@
+/* 闲暇时光小厨房详情页 */
+/* 头部 */
+.menuDetail .main{
+  padding: 0 26rpx;
+}
+.menuDetail .title_img{
+  width: 100%;
+}
+.menuDetail .title{
+  text-align: center;
+  color: #89C3EB;
+  font-size: 38rpx;
+  margin-bottom: 20rpx;
+}
+.menuDetail .des{
+  color: #999;
+  font-size: 26rpx;
+}
+/* 材料 */
+.menuDetail .ingredient{
+  margin-top: 22rpx;
+}
+.menuDetail .ingredient_info{
+  border-bottom: 1px dashed #89C3EB;
+  overflow: hidden;
+  color: #666;
+  font-size: 30rpx;
+  margin-bottom: 16rpx;
+  padding: 10rpx;
+}
+.menuDetail .ingredient_info .left{
+  float: left;
+}
+.menuDetail .ingredient_info .right{
+  float: right;
+}
+/* 做法 */
+.menuDetail .step{
+  margin-top: 22rpx;
+}
+.menuDetail .step_detail .step_des{
+  color: #666;
+  font-size: 28rpx;
+}
+.menuDetail .step_detail image{
+  width: 100%;
+  border-radius: 20rpx;
+}

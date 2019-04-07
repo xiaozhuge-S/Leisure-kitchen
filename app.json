@@ -1,29 +1,30 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/recommend/recommend",
     "pages/category/category",
     "pages/my/my",
     "pages/search/search",
-    "pages/navlist/navlist"
+    "pages/navlist/navlist",
+    "pages/menuDetail/menuDetail"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#89C3EB",
     "navigationBarTitleText": "闲暇时光小厨房",
-    "navigationBarTextStyle":"white"
+    "navigationBarTextStyle": "white"
   },
-  "tabBar":{
-    "color":"#fff",
-    "selectedColor":"#007CBC",
-    "backgroundColor":"#89C3EB",
-    "borderStyle":"white",
-    "list":[
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#007CBC",
+    "backgroundColor": "#89C3EB",
+    "borderStyle": "white",
+    "list": [
       {
-        "pagePath":"pages/index/index",
-        "text":"首页",
-        "iconPath":"/assets/home.png",
-        "selectedIconPath":"/assets/home-actived.png"
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/assets/home.png",
+        "selectedIconPath": "/assets/home-actived.png"
       },
       {
         "pagePath": "pages/recommend/recommend",

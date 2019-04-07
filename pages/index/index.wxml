@@ -29,19 +29,21 @@
   <view class='hot_title'> —— 热门菜谱 —— </view>
   <view class='hot_list'>
     <view class='list' wx:for="{{hotlist}}" wx:key="{{id}}">
-      <view class='list_l'>
-        <image src='{{item.imgUrl}}'></image>
-      </view>
-      <view class='list_r'>
-        <view class='r_title'>{{item.caipuName}}</view>
-        <view class='des'>{{item.healthStr}}</view>
-        <view class='bom'>
-          <view class='look'>{{item.viewCount}}人浏览</view>
-          <view class='collect'>{{item.favoriteCount}}人收藏</view>
+      <navigator url='/pages/menuDetail/menuDetail' hover-class='none'>
+        <view class='list_l'>
+          <image src='{{item.imgUrl}}'></image>
         </view>
-      </view>
-      
+        <view class='list_r'>
+          <view class='r_title'>{{item.caipuName}}</view>
+          <view class='des'>{{item.healthStr}}</view>
+          <view class='bom'>
+            <view class='look'>{{item.viewCount}}人浏览</view>
+            <view class='collect'>{{item.favoriteCount}}人收藏</view>
+          </view>
+        </view>
+      </navigator>
     </view>
+    
   </view>
 </view>
 <!-- 闲暇时光小厨房热门底部 -->
