@@ -4,6 +4,6 @@
     <view class='category_menu' wx:for="{{categoryList}}" wx:key="{{id}}">{{item.cName}}</view>
   </view>
   <view class='right_menu'>
-    <view class='menu_list' wx:for="{{categoryList}}" wx:key="{{id}}">{{item.child}}</view>
+    <!-- <view class='menu_list' wx:for="{{categoryList}}" wx:key="{{id}}">{{item.child}}</view> -->
   </view>
 </view>
