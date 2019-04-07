@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/recommend/recommend",
+    "pages/category/category",
+    "pages/my/my",
+    "pages/search/search",
+    "pages/navlist/navlist"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#89C3EB",
+    "navigationBarTitleText": "闲暇时光小厨房",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "color":"#fff",
+    "selectedColor":"#007CBC",
+    "backgroundColor":"#89C3EB",
+    "borderStyle":"white",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"首页",
+        "iconPath":"/assets/home.png",
+        "selectedIconPath":"/assets/home-actived.png"
+      },
+      {
+        "pagePath": "pages/recommend/recommend",
+        "text": "推荐",
+        "iconPath": "/assets/board.png",
+        "selectedIconPath": "/assets/board-actived.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "/assets/note.png",
+        "selectedIconPath": "/assets/note-actived.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/assets/profile.png",
+        "selectedIconPath": "/assets/profile-actived.png"
+      }
+    ]
+  }
+}

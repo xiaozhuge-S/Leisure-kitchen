@@ -1,0 +1,36 @@
+<!-- 闲暇时光小厨房推荐页头部 -->
+<view class='header'>
+  <!-- <view class='logo'>
+    <image src='/assets/logo.png'></image>
+  </view> -->
+  <view class='search'>
+    <navigator url='/pages/search/search' hover-class="none">
+      <input focus='true' placeholder='搜索菜谱...'>
+        <view class='search_icon'>
+          <image src='/assets/search.png'></image>
+        </view>
+      </input>
+    </navigator>
+    
+  </view>
+</view>
+<view class='recommend'>
+  <view class='recommend_list'>
+    <view class='list' wx:for="{{recommendMenu}}" wx:key="{{id}}">
+      <view class='list_l'>
+        <image src='{{item.imgUrl}}'></image>
+      </view>
+      <view class='list_r'>
+        <view class='r_title'>{{item.caipuName}}</view>
+        <view class='des'>{{item.healthStr}}</view>
+        <view class='bom'>
+          <view class='look'>{{item.viewCount}}人浏览</view>
+          <view class='collect'>{{item.favoriteCount}}人收藏</view>
+        </view>
+      </view>
+      
+    </view>
+  </view>
+</view>
+<!-- 闲暇时光小厨房推荐底部 -->
+<view class='footer'> —— 已经到底了呦~~ —— </view>

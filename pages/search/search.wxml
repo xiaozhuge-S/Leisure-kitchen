@@ -1,0 +1,16 @@
+<!-- 闲暇时光小厨房搜索页头部 -->
+<view class='header'>
+  <!-- <view class='logo'>
+    <image src='/assets/logo.png'></image>
+  </view> -->
+  <view class='search'>
+    <navigator url='' hover-class="none">
+      <input focus='true' placeholder='搜索菜谱...'>
+        <view class='search_icon'>
+          <image src='/assets/search.png'></image>
+        </view>
+      </input>
+    </navigator>
+    
+  </view>
+</view>
