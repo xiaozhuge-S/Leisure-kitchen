@@ -1,9 +1,11 @@
 <!-- 闲暇时光小厨房分类 -->
 <view class='category'>
   <view class='left_menu'>
-    <view class='category_menu' wx:for="{{categoryList}}" wx:key="{{id}}">{{item.cName}}</view>
-  </view>
-  <view class='right_menu'>
-    <!-- <view class='menu_list' wx:for="{{categoryList}}" wx:key="{{id}}">{{item.child}}</view> -->
+    <view class='category_menu' wx:for="{{categoryList}}" wx:key="{{id}}">
+      <text bindtap="shouAction" id="{{item.cName}}">{{item.cName}}</text>
+      <view class='right_menu' wx:if="{{action==item.cName}}">
+        <view class='menu_list' wx:for="{{item.child}}" wx:key="{{id}}">{{item.cName}}</view>
+      </view>
+    </view>
   </view>
 </view>

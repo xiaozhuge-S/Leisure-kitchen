@@ -25,9 +25,12 @@
 }
 .category .right_menu{
   width: 80%;
+  margin-left: 20%;
   background: pink;
   padding: 30rpx;
   overflow: hidden;
+  position: absolute;
+  top: 0;
   box-sizing: border-box;
 }
 .category .right_menu .menu_list{

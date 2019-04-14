@@ -5,9 +5,15 @@ Page({
    * 页面的初始数据
    */
   data: {
-    categoryList:[]
+    categoryList:[],
+    action: 0
   },
-
+  shouAction: function(event) {
+    // console.log(event);
+    this.data.action = event.target.id;
+    this.setData(this.data);
+    // console.log(this.data.action)
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -18,8 +24,9 @@ Page({
       data:{},
       success: res => {
         this.data.categoryList = res.data.data;
+        this.data.action = res.data.data[0].cName;
         this.setData(this.data);
-        console.log(this.data.categoryList);
+        // console.log(this.data.categoryList);
       }
     })
   },
@@ -35,7 +42,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    
   },
 
   /**

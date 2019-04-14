@@ -32,14 +32,24 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    console.log(options.id)  
+    wx.request({
+      url: 'http://api.360meishi.net/?a=info&c=caipu&code=' + options.id,
+      method: 'GET',
+      data: {},
+      success: res => {
+        this.data.menuDetailsList = res.data.data;
+        console.log(this.data.menuDetailsList);
+        this.setData(this.data);
+      }
+    })  
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+
   },
 
   /**

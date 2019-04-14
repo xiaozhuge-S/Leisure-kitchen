@@ -29,7 +29,7 @@
   <view class='hot_title'> —— 热门菜谱 —— </view>
   <view class='hot_list'>
     <view class='list' wx:for="{{hotlist}}" wx:key="{{id}}">
-      <navigator url='/pages/menuDetail/menuDetail' hover-class='none'>
+      <view bindtap="toDetail" id="{{item.caipuCode}}">
         <view class='list_l'>
           <image src='{{item.imgUrl}}'></image>
         </view>
@@ -41,7 +41,7 @@
             <view class='collect'>{{item.favoriteCount}}人收藏</view>
           </view>
         </view>
-      </navigator>
+      </view>
     </view>
     
   </view>
