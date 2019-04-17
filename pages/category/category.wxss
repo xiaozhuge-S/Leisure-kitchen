@@ -26,7 +26,7 @@
 .category .right_menu{
   width: 80%;
   margin-left: 20%;
-  background: pink;
+  /* background: pink; */
   padding: 30rpx;
   overflow: hidden;
   position: absolute;
@@ -37,7 +37,7 @@
   height:30rpx;
   font-size:24rpx;
   float:left;
-  margin-left:10rpx;
+  margin:15rpx 10rpx;
   padding:10rpx 15rpx;
   color:#999;
   border:1rpx solid #A6D9FB;

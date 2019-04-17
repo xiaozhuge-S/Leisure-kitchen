@@ -25,7 +25,7 @@ Page({
         method: 'GET',
         data: {},
         success: res => {
-          console.log(res.data.data);
+          // console.log(res.data.data);
           this.data.hotlist = res.data.data;
           this.setData(this.data);
         }

@@ -2,6 +2,12 @@ Page({
   data: {
     recommendMenu: [],
   },
+  toDetail(event) {
+    console.log(event)
+    wx.navigateTo({
+      url: '/pages/menuDetail/menuDetail?id=' + event.currentTarget.id,
+    })
+  },
   onLoad() {
     wx.request({
       url: 'http://api.360meishi.net/?c=home&a=home',

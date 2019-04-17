@@ -20,6 +20,9 @@
 .menuDetail .ingredient{
   margin-top: 22rpx;
 }
+.ingredient_title{
+  margin-bottom: 22rpx;
+}
 .menuDetail .ingredient_info{
   border-bottom: 1px dashed #89C3EB;
   overflow: hidden;
@@ -36,13 +39,38 @@
 }
 /* 做法 */
 .menuDetail .step{
-  margin-top: 22rpx;
+  margin-top: 32rpx;
+  margin-bottom: 22rpx;
 }
 .menuDetail .step_detail .step_des{
   color: #666;
   font-size: 28rpx;
+  margin: 20rpx;
 }
 .menuDetail .step_detail image{
   width: 100%;
   border-radius: 20rpx;
+}
+/* 推荐 */
+.other{
+  /* background: skyblue; */
+  margin-top: 30rpx;
+}
+.other .other_cai{
+  width: 50%;
+  float: left;
+  padding: 5%;
+  box-sizing: border-box;
+}
+.other .other_cai .other_img{
+   width: 300rpx;
+   height: 250rpx;
+   border-radius: 10rpx;
+}
+.other .other_cai .other_title{
+   font-size: 34rpx;
+}
+.other .other_cai .other_des{
+   font-size: 26rpx;
+   color: #666;
 }

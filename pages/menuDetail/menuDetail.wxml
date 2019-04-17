@@ -5,16 +5,25 @@
     <view class='title'>{{menuDetailsList.caipuName}}</view>
     <view class='des'>{{menuDetailsList.healthStr}}</view>
     <view class='ingredient'>
-      <view class='ingredient_title'>材料</view>
+      <view class='ingredient_title'>材料:</view>
       <view class='ingredient_info' wx:for="{{menuDetailsList.buredens}}" wx:key="{{id}}">
         <view class='left'>{{item.burdensName}}</view>
         <view class='right'>{{item.burdensContent}}</view>
       </view>
     </view>
-    <view class='step'>做法</view>
+    <view class='step'>做法:</view>
     <view class='step_detail' wx:for="{{menuDetailsList.makes}}" wx:key="{{isIndex}}">
-      <view class='step_des'>步骤1：{{item.info}}</view>
+      <view class='step_des'>{{item.info}}</view>
       <image src='{{item.imgUrl}}'></image>
+    </view>
+  </view>
+  <!-- 推荐 -->
+  <view class='other'>
+    <view>相似推荐：</view>
+    <view class='other_cai' wx:for="{{menuDetailsList.recommend}}" wx:key="{{id}}">
+      <image class='other_img' src='{{item.imgUrl}}'></image>
+      <view class='other_title'>{{item.caipuName}}</view>
+      <view class='other_des'>{{item.healthStr}}</view>
     </view>
   </view>
 </view>

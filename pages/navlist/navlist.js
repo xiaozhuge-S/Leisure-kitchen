@@ -3,6 +3,12 @@ Page({
     id:'',
     navlist:[]
   },
+  toDetail(event) {
+    console.log(event)
+    wx.navigateTo({
+      url: '/pages/menuDetail/menuDetail?id=' + event.currentTarget.id,
+    })
+  },
   onLoad(query){
     console.log(query);
     // this.data.id = query.id;

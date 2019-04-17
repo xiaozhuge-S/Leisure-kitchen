@@ -26,7 +26,7 @@ Page({
         this.data.categoryList = res.data.data;
         this.data.action = res.data.data[0].cName;
         this.setData(this.data);
-        // console.log(this.data.categoryList);
+        console.log(this.data.categoryList);
       }
     })
   },

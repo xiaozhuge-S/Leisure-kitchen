@@ -1,9 +1,10 @@
 
 <!-- 闲暇时光小厨房nav菜谱列表 -->
 <view class='hot'>
-  <view class='hot_title'> —— 热门菜谱 —— </view>
+  <view class='hot_title'> —— 闲暇时光经典菜谱 —— </view>
   <view class='hot_list'>
     <view class='list' wx:for="{{navlist}}" wx:key="{{id}}">
+    <view bindtap="toDetail" id="{{item.caipuCode}}">
       <view class='list_l'>
         <image src='{{item.imgUrl}}'></image>
       </view>
@@ -15,6 +16,8 @@
           <view class='collect'>{{item.favoriteCount}}人收藏</view>
         </view>
       </view>
+    </view>
+      
       
     </view>
   </view>

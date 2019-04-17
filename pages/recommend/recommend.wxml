@@ -17,6 +17,7 @@
 <view class='recommend'>
   <view class='recommend_list'>
     <view class='list' wx:for="{{recommendMenu}}" wx:key="{{id}}">
+    <view bindtap="toDetail" id="{{item.caipuCode}}">
       <view class='list_l'>
         <image src='{{item.imgUrl}}'></image>
       </view>
@@ -28,6 +29,8 @@
           <view class='collect'>{{item.favoriteCount}}人收藏</view>
         </view>
       </view>
+    </view>
+      
       
     </view>
   </view>
