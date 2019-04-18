@@ -66,11 +66,18 @@
    width: 300rpx;
    height: 250rpx;
    border-radius: 10rpx;
+   background: rgb(231, 246, 255);
 }
 .other .other_cai .other_title{
    font-size: 34rpx;
+   /* background: rgb(231, 246, 255); */
 }
 .other .other_cai .other_des{
    font-size: 26rpx;
    color: #666;
+   /* background: rgb(231, 246, 255); */
+   display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }

@@ -4,19 +4,19 @@
   <view class='hot_title'> —— 闲暇时光经典菜谱 —— </view>
   <view class='hot_list'>
     <view class='list' wx:for="{{navlist}}" wx:key="{{id}}">
-    <view bindtap="toDetail" id="{{item.caipuCode}}">
-      <view class='list_l'>
-        <image src='{{item.imgUrl}}'></image>
-      </view>
-      <view class='list_r'>
-        <view class='r_title'>{{item.caipuName}}</view>
-        <view class='des'>{{item.healthStr}}</view>
-        <view class='bom'>
-          <view class='look'>{{item.viewCount}}人浏览</view>
-          <view class='collect'>{{item.favoriteCount}}人收藏</view>
+      <view bindtap="toDetail" id="{{item.caipuCode}}">
+        <view class='list_l'>
+          <image src='{{item.imgUrl}}'></image>
+        </view>
+        <view class='list_r'>
+          <view class='r_title'>{{item.caipuName}}</view>
+          <view class='des'>{{item.healthStr}}</view>
+          <view class='bom'>
+            <view class='look'>{{item.viewCount}}人浏览</view>
+            <view class='collect'>{{item.favoriteCount}}人收藏</view>
+          </view>
         </view>
       </view>
-    </view>
       
       
     </view>

@@ -4,13 +4,33 @@
     <image src='/assets/logo.png'></image>
   </view> -->
   <view class='search'>
-    <navigator url='' hover-class="none">
-      <input focus='true' placeholder='搜索菜谱...'>
+    <!-- <navigator url='' hover-class="none"> -->
+      <input focus='true' placeholder='搜索菜谱...' bindinput='getvalue'>
         <view class='search_icon'>
-          <image src='/assets/search.png'></image>
+          <image src='/assets/search.png' bindtap='selectmenu'></image>
         </view>
       </input>
-    </navigator>
+    <!-- </navigator> -->
     
+  </view>
+
+  <view class='hot_list'>
+    <view class='list' wx:for="{{selectList}}" wx:key="{{id}}">
+      <view bindtap="toDetail" id="{{item.caipuCode}}">
+        <view class='list_l'>
+          <image src='{{item.imgUrl}}'></image>
+        </view>
+        <view class='list_r'>
+          <view class='r_title'>{{item.caipuName}}</view>
+          <view class='des'>{{item.healthStr}}</view>
+          <view class='bom'>
+            <view class='look'>{{item.viewCount}}人浏览</view>
+            <view class='collect'>{{item.favoriteCount}}人收藏</view>
+          </view>
+        </view>
+      </view>
+      
+      
+    </view>
   </view>
 </view>

@@ -5,14 +5,38 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    inputvalue:'',
+    selectList:[]
   },
-
+  toDetail(event) {
+    console.log(event)
+    wx.navigateTo({
+      url: '/pages/menuDetail/menuDetail?id=' + event.currentTarget.id,
+    })
+  },
+  getvalue(e){
+    this.setData({
+      inputvalue: e.detail.value
+    })
+    console.log(this.data.inputvalue);
+  },
+  selectmenu(){
+    wx.request({
+      url: `http://api.360meishi.net/?a=caipu&c=search&keywords=${this.data.inputvalue}&page=${this.page}`,
+      method: 'GET',
+      data: {},
+      success: res => {
+        console.log(res.data.data);
+        this.data.selectList = res.data.data;
+        this.setData(this.data);
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
 
   /**
