@@ -61,6 +61,8 @@
   float: left;
   padding: 5%;
   box-sizing: border-box;
+  overflow: hidden;
+  height: 470rpx;
 }
 .other .other_cai .other_img{
    width: 300rpx;
