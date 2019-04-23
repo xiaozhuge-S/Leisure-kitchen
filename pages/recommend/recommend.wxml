@@ -17,7 +17,7 @@
 <view class='recommend'>
   <view class='recommend_list'>
     <view class='list' wx:for="{{recommendMenu}}" wx:key="{{id}}">
-    <view bindtap="toDetail" id="{{item.caipuCode}}">
+    <view bindtap="toDetail" data-item="{{item}}" id="{{item.caipuCode}}">
       <view class='list_l'>
         <image src='{{item.imgUrl}}'></image>
       </view>

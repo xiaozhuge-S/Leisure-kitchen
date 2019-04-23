@@ -6,6 +6,12 @@
 .menuDetail .title_img{
   width: 100%;
 }
+.menuDetail .favourate-img {
+  width: 35rpx;
+  height: 35rpx;
+  float: right;
+  margin-top: 10rpx;
+}
 .menuDetail .title{
   text-align: center;
   color: #89C3EB;

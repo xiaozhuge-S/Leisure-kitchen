@@ -2,7 +2,10 @@
 <view class='menuDetail'>
   <image class='title_img' src='{{menuDetailsList.imgUrl}}'></image>
   <view class='main'>
-    <view class='title'>{{menuDetailsList.caipuName}}</view>
+    <view class='title'>
+      {{menuDetailsList.caipuName}}
+      <image src='{{favourateImg}}' class='favourate-img' bindtap='addFavourate'></image>
+    </view>
     <view class='des'>{{menuDetailsList.healthStr}}</view>
     <view class='ingredient'>
       <view class='ingredient_title'>材料:</view>

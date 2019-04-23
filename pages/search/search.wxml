@@ -16,7 +16,7 @@
 
   <view class='hot_list'>
     <view class='list' wx:for="{{selectList}}" wx:key="{{id}}">
-      <view bindtap="toDetail" id="{{item.caipuCode}}">
+      <view bindtap="toDetail" data-item="{{item}}" id="{{item.caipuCode}}">
         <view class='list_l'>
           <image src='{{item.imgUrl}}'></image>
         </view>

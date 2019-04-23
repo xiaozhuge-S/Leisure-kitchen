@@ -1,1 +1,27 @@
-<view></view>
+<view>
+  <view class='tabs'>
+    <view class='tabs-title' bindtap='changeTab' data-id="0">历史</view>
+    <view class='tabs-title' bindtap='changeTab' data-id='1'>收藏</view>
+  </view>
+  <!-- 历史&收藏 -->
+  <view class='hot'>
+    <view class='hot_list'>
+      <view class='list' wx:for="{{hotlist}}" wx:key="{{id}}">
+        <view bindtap="toDetail" data-item="{{item}}" id="{{item.caipuCode}}">
+          <view class='list_l'>
+            <image src='{{item.imgUrl}}'></image>
+          </view>
+          <view class='list_r'>
+            <view class='r_title'>{{item.caipuName}}</view>
+            <view class='des'>{{item.healthStr}}</view>
+            <view class='bom'>
+              <view class='look'>{{item.viewCount}}人浏览</view>
+              <view class='collect'>{{item.favoriteCount}}人收藏</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      
+    </view>
+  </view>
+</view>
